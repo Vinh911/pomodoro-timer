@@ -4,9 +4,9 @@ namespace App\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 
-class IndexController extends AbstractController
+class TodoController extends AbstractController
 {
     public function index(): Response {
-        return $this->render('timer/timer.html.twig', []);
+        return $this->render('todo/todo.html.twig', []);
     }
 }
