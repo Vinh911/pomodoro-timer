@@ -1,0 +1,8 @@
+<head>
+    <title>hw</title>
+</head>
+<body>
+    {% set navBarItems = {'navigation': [{'href': '/', 'label': 'timer'}, {'href': 'todo', 'label': 'todo'}, {'href': 'analysis', 'label': 'analysis'}]} %}
+    {% include 'index/navBar.html.twig' with navBarItems %}
+    {% block content %}{% endblock %}
+</body>
